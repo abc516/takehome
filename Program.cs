@@ -72,7 +72,7 @@ namespace takehome
                     }
                 }
                 // ask for file size
-                Console.Write("Please enter the maximum size of the file to search for in bytes (e.g. '1000') or press the 'enter' key to skip this filter criteria.");
+                Console.WriteLine("Please enter the maximum size of the file to search for in bytes (e.g. '1000') or press the 'enter' key to skip this filter criteria.");
                 string sizeStr = Console.ReadLine();
 
                 if(!String.IsNullOrWhiteSpace(sizeStr)){
@@ -89,7 +89,7 @@ namespace takehome
                     }
                 }
                 // ask for file type
-                Console.Write("Please enter the name of the file extension you would like to search for (e.g. '.docx') or press the 'enter' key to skip this filter criteria. ");
+                Console.WriteLine("Please enter the name of the file extension you would like to search for (e.g. '.docx') or press the 'enter' key to skip this filter criteria. ");
                 // show results
                 string atrStr = Console.ReadLine();
                 if(!String.IsNullOrWhiteSpace(atrStr )){
@@ -108,7 +108,7 @@ namespace takehome
                     Console.WriteLine($"Path: {fi.FullName}, Size: {fi.Length}, type: {fi.Extension}");
                 }
 
-                Console.Write("Thanks! Please type in 'y' to search again");
+                Console.WriteLine("Thanks! Please type in 'y' to search again, or any other character to exit the application");
 
                 string searchAg = Console.ReadLine();
                 if(searchAg == null || searchAg.ToLower() != "y") shouldSearch = false;
