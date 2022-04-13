@@ -47,7 +47,7 @@ namespace takehome
                     ParseData(subDir);
                 }
             }
-            catch (System.Exception ex)
+            catch (System.Exception)
             {
                 Console.WriteLine($"Ran into an exception, cannot parse {startDirName} any further.");
             }
